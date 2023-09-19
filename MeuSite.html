@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-image: url('background.jpg'); /* Adicione a URL da sua imagem de plano de fundo aqui */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #0073e6; /* Azul */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        footer {
+            background-color: #0073e6; /* Azul */
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0050a5; /* Azul mais escuro ao passar o mouse */
+        }
+
+        /* Estilo adicional */
+        .jumbotron {
+            background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro */
+            padding: 40px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin: 0 auto;
+            max-width: 800px;
+            color: #fff;
+        }
+
+        .jumbotron h1 {
+            font-size: 48px;
+            margin: 0;
+            background-color: #0073e6; /* Azul */
+            padding: 10px;
+            display: inline;
+        }
+
+        .feature-icon {
+            font-size: 48px;
+            color: #0073e6; /* Azul */
+            margin-bottom: 20px;
+        }
+
+        .feature-title {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .feature-description {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #666;
+        }
+
+        .call-to-action {
+            background-color: #0073e6; /* Azul */
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 20px;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+            margin-top: 30px;
+            text-decoration: none;
+        }
+
+        .call-to-action:hover {
+            background-color: #0050a5; /* Azul mais escuro ao passar o mouse */
+        }
+
+        /* Estilo para seção "Sobre Nós" */
+        .about-us {
+            background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro */
+            padding: 40px;
+            text-align: center;
+            color: #fff; /* Texto em branco */
+        }
+
+        .about-us h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #fff; /* Texto em branco */
+            background-color: #0073e6; /* Azul */
+            padding: 10px;
+            display: inline;
+        }
+
+        .about-us p {
+            font-size: 18px;
+            color: #fff; /* Texto em branco */
+            margin-top: 10px;
+        }
+
+        /* Estilo para a seção de recursos */
+        .features {
+            background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro */
+            padding: 40px;
+            text-align: center;
+            color: #fff; /* Texto em branco */
+        }
+
+        .feature-item {
+            display: inline-block;
+            margin: 0 30px;
+            vertical-align: top;
+            text-align: center;
+        }
+
+        .feature-item i {
+            font-size: 36px;
+            color: #0073e6; /* Azul */
+            margin-bottom: 20px;
+        }
+
+        .feature-item h3 {
+            font-size: 24px;
+            margin: 10px 0;
+            color: #fff; /* Texto em branco */
+            background-color: #0073e6; /* Azul */
+            padding: 10px;
+            display: inline;
+        }
+
+        .feature-item p {
+            font-size: 18px;
+            color: #fff; /* Texto em branco */
+            margin-top: 10px;
+        }
+
+        /* Estilo para o texto de boas-vindas */
+        .welcome-text {
+            background-color: #0073e6; /* Azul */
+            color: #fff; /* Texto em branco */
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        /* Estilo para a descrição de boas-vindas */
+        .welcome-description {
+            background-color: #0073e6; /* Azul */
+            color: #fff; /* Texto em branco */
+            padding: 10px;
+            border-radius: 5px;
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span style="background-color: #fff; color: #0073e6; padding: 10px;">Bem-vindo ao Meu Site</span></h1>
+        <p class="welcome-description">Descubra um mundo de oportunidades e informações emocionantes.</p>
+        <a href="contato.html" class="call-to-action">Entre em Contato</a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="MeuSite.html" style="background-color: #fff; color: #0073e6;">Página Inicial</a></li>
+            <li><a href="sobre-nos.html" style="background-color: #fff; color: #0073e6;">Sobre Nós</a></li>
+            <li><a href="contato.html" style="background-color: #fff; color: #0073e6;">Contato</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="jumbotron">
+            <i class="feature-icon">🚀</i>
+            <h2 class="feature-title">Por que escolher o Meu Site?</h2>
+            <p class="feature-description">Nosso compromisso é proporcionar produtos e serviços da mais alta qualidade. Valorizamos a transparência, o atendimento ao cliente e a inovação.</p>
+            <a href="sobre-nos.html" class="call-to-action">Saiba Mais</a>
+        </div>
+    </section>
+    <section class="about-us">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma equipe de profissionais apaixonados que acredita no poder da inovação e na busca incansável pela excelência. Com uma vasta experiência em diversas áreas, estamos comprometidos em fornecer resultados de alta qualidade para nossos clientes.</p>
+        <a href="sobre-nos.html" class="call-to-action">Saiba Mais</a>
+    </section>
+    <section class="features">
+        <h2>Recursos Principais</h2>
+        <div class="feature-item">
+            <i class="feature-icon">📊</i>
+            <h3>Análise de Dados</h3>
+            <p>Obtenha insights valiosos com nossas análises de dados avançadas.</p>
+        </div>
+        <div class="feature-item">
+            <i class="feature-icon">💼</i>
+            <h3>Consultoria Empresarial</h3>
+            <p>Nossos especialistas em consultoria podem ajudar a impulsionar o seu negócio.</p>
+        </div>
+        <div class="feature-item">
+            <i class="feature-icon">🔒</i>
+            <h3>Segurança de Dados</h3>
+            <p>Protegemos seus dados com as mais recentes medidas de segurança.</p>
+        </div>
+    </section>
+    <div class="welcome-text">
+        <p>Explore todas as oportunidades que o Meu Site tem a oferecer. Somos dedicados a fornecer a você a melhor experiência online, com produtos e serviços de alta qualidade.</p>
+    </div>
+    <footer>
+        &copy; 2023 Meu Site
+    </footer>
+</body>
+</html>
